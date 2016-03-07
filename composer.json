@@ -1,5 +1,5 @@
 {
-    "name": "driessenstijn/EntityGenerator",
+    "name": "driessenstijn/entity-generator",
     "description": "This is a simple form that will give you the necessary files that you need for entities, such as a zf2 application",
     "authors": [
         {
