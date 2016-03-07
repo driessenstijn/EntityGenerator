@@ -1,37 +1,31 @@
-# Waper
+# EntityGenerator
 
-Website Logo Scraper
+EntityGenerator will help you to create the models/entities that you require for your application. 
+If your IDE is not supportive enough, you can simply copy paste your table columns in here.
 
 ### Installation
 
 ```sh
-composer require driessenstijn/waper/
+composer require driessenstijn/EntityGenerator/
 ```
 
-## Why use waper?
+## Why use EntityGenerator?
 
-Waper will allow you to crawl any given website to find out what logo it uses. It's simple and it should always return a logo for you.
+Well, if your IDE is not supportive enough you must have something else to do the dirty work.
 
-## The logic
+## How to use
 
-The logic is simple and straightforward. It will do the following checks in sequence to find a logo
-
-- It will first try to find a logo named image on the website
-- If not found, it will continue to check all CSS files of the website to find a logo in
-- If all above methods fail, it will use Google to find it
-
-## Fair Use Policy
-
-Please use this package to add a logo to a given website when displaying or whenever you want to assist a user to add a logo for him on basis of a given website. Do note that the last step is to crawl also Google for a logo file. Google will block excessive attempts on the Google website so please be aware of this and use it wisely.
+It's simple:
+- Type: EXPLAIN <table> in your MySQL Workbench
+- Copy the columns of name and type to your clipboard
+- Paste your clipboard and enter your table name in the form
+- Enjoy the file content that needs to be created
 
 ## Usage example
 
 ```php
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use Waper\Waper;
+use EntityGenerator\EntityGenerator;
 
-$waper = new Waper('http://www.hourpendulum.com');
-$image = $waper->fetch();
-echo '<img src="'.$image.'" />';
 ```

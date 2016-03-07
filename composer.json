@@ -1,6 +1,6 @@
 {
-    "name": "driessenstijn/waper",
-    "description": "This function will return the website logo url of a given website url",
+    "name": "driessenstijn/EntityGenerator",
+    "description": "This is a simple form that will give you the necessary files that you need for entities, such as a zf2 application",
     "authors": [
         {
             "name": "Stijn Driessen",
@@ -13,7 +13,7 @@
 	},
     "autoload": {
         "psr-4": {
-            "Waper\\": "src/Waper/"
+            "EntityGenerator\\": "src/EntityGenerator/"
         }
 	}
 }
